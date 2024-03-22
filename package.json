@@ -1,5 +1,9 @@
 {
+    "type": "module",
     "dependencies": {
-        "express": "^4.183"
+      "express": "^4.19.1"
+    },
+    "scripts": {
+        "dev": "nodemon --ext html,js,json app.js"
     }
 }
