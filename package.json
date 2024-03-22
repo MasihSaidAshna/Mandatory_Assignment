@@ -1,9 +1,14 @@
 {
-    "type": "module",
-    "dependencies": {
-      "express": "^4.19.1"
-    },
-    "scripts": {
-        "dev": "nodemon --ext html,js,json app.js"
-    }
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.1"
+  },
+  "scripts": {
+    "dev": "cross-env PORT=9090 nodemon app.js",
+    "prod": "cross-env PORT=80 node app.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.0"
+  }
 }

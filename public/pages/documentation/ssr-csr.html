@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSR-CSR</title>
+    <link rel="stylesheet" href="../assets/css/pure.css">
+    <link rel="stylesheet" href="../assets/css/side-menu pure.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Server-Side Rendering and Client-Side Rendering</h1>
+            <h2>Documentation on SSR vs. CSR</h2>
+        </div>
+        <div class="content">
+            <p>
+                When rendering a page in an application it is either done from a server-side (SSR) or the client's side (CSR). 
+                Each approach to this rendering process has its advantages and disadvantages and the factors that come to play are usually performance,  application complexity and maintenance.
+            </p>
+            <h3>Server-Side Rendering</h3>
+            <p>
+                Like the name suggests, this rendering process is handled on the server's side. 
+                On an HTML page  the content is generated in response to the client's request; the server processes said request, executes server-side code and dynamically generates the HTML.
+                One trade-off you take when choosing to implement SSR over CSR is  that the performance suffers from high complexity applications with a lot of dynamic content.
+                An example of an SSR implementation can be found in the code of this very project; there lies a templating engine JavaScript file which is responsible for rendering the pages.
+            </p>
+            <h3>Client-Side Rendering</h3>
+            <p>
+
+            </p>
+        </div>
+    </div>
+</body>
