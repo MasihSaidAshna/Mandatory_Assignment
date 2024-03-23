@@ -12,8 +12,8 @@ export const contactRender = renderPage(contact);
 const nodejs = readPage("./public/pages/documentation/nodejs.html");
 export const nodejsRender = renderPage(nodejs);
 
-const functions = readPage("./public/pages/documentation/functions.html");
-export const functionsRender = renderPage(functions);
+const express = readPage("./public/pages/documentation/express.html");
+export const expressRender = renderPage(express);
 
 const deploy = readPage("./public/pages/documentation/deployment.html");
 export const deploymentRender = renderPage(deploy);

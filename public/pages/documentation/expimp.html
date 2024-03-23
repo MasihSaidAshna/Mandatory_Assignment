@@ -7,7 +7,52 @@
     <title>Export-Import</title>
     <link rel="stylesheet" href="../assets/css/pure.css">
     <link rel="stylesheet" href="../assets/css/side-menu pure.css" />
+    <link rel="icon" href="../assets/images/nodejs.png">
 </head>
 
 <body>
+    <div class="main">
+        <div class="header">
+            <h1>Export and Import</h1>
+            <h2>Documentation on exporting and importing in Node.js</h2>
+        </div>
+        <div class="content">
+            <p>
+                In Node.js you can export and import modules to manage and maintain large-scale applications easier. By default Node.js is used with CommonJS's module system, which involves:
+                <code>module.exports;</code>
+                and
+                <code>require();</code>.
+                Instead of using CommonJS's module system, you can use ES which has the keywords "export" and "import". ES generally offers more features over CommonJS.
+            </p>
+            <h2>CommonJS</h2>
+            <p>
+                In the following examples is how you export modules with CommonJS:
+                <pre>
+                    const myFunction = () => {
+                    };
+                    
+                    module.exports = myFunction;    
+                    // Or you can use:
+                    exports.myFunction = myFunction;
+                </pre> 
+                In this code snippet we are exporting a single function. To then import this function you write:
+                <pre>
+                    const myFunction = require('./myModule');
+                    // OR
+                    const { myFunction } = require('./myModule');
+                </pre>
+            </p>
+            <h2>ES6</h2>
+            <p>
+                Importing and exporting in ES is written differently than CommonJS. You export a default function this way:
+                <pre>
+                    export default myFunction;
+                </pre>
+                and importing a default export:
+                <pre>
+                    import myFunction from './myModule';
+                </pre>
+            </p>
+        </div>
+    </div>
 </body>

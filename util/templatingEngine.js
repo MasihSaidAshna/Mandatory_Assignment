@@ -8,6 +8,6 @@ export function renderPage(page, config={}) {
     const header = fs.readFileSync("./public/components/header/header.html").toString();
     const footer = fs.readFileSync("./public/components/footer/footer.html").toString();
     const sidemenu = fs.readFileSync("./public/components/sidemenu/sidemenu.html").toString();
-    return page + header + footer + sidemenu;
+    return header + page + sidemenu + footer;
 }
 

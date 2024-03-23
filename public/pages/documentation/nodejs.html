@@ -7,6 +7,7 @@
     <title>Nodejs</title>
     <link rel="stylesheet" href="../assets/css/pure.css">
     <link rel="stylesheet" href="../assets/css/side-menu pure.css" />
+    <link rel="icon" href="../assets/images/nodejs.png">
 </head>
 
 <body>
@@ -18,8 +19,59 @@
         <div class="content">
             <p>
                 Node.js is an open-source JavaScript runtime environment. A key feature behind Node.js is its package system, npm, which is used to access innumerous libaries and modules.
+                Node.js has the benefit of server-side rendering, which means the server is often used to generate dynamic HTML content before the page is sent to the client. 
+                THanks to its event-driven architecture, Node.js is capable of asynchronous I/O. This means appliations can handle many connections at the same time and respond quickly.
                 It is ideally suited for building REST APIs.
             </p>
+            <h2>Using Node.js in the terminal</h2>
+            <p>
+                Usage Node.js comes with using your terminal a lot of the time. The table below shows some examples of common commands one would type in the terminal when using Node.js.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Terminal command</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>npm init</td>
+                        <td>Initializes/sets up a project with defaults; creates package.json</td>
+                    </tr>
+                    <tr>
+                        <td>npm install package_name</td>
+                        <td>Installs a specific package</td>
+                    </tr>
+                    <tr>
+                        <td>node filename.js</td>
+                        <td>Runs the Node.js script from the project directory</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>REST API conventions</h2>
+            <span>
+                There are 3 conventions when it comes to REST:
+            </span>
+            <ol>
+                <li>
+                    HTTP methods (verbs)
+                </li>
+                <li>
+                    Ordering
+                </li>
+                <li>
+                    Naming nouns in plural or singular 
+                </li>
+            </ol>
+            <h3>HTTP methods</h3>
+            <p>REST APIs use HTTP methods to perform different actions. The most commonly used are GET, POST, PUT, DELETE. 
+                GET is used to retrieve data from a resource, POST creates a new resource, PUT updates an existing resource and DELETE deletes a resource.</p>
+            <h3>Ordering</h3>
+            <p>Ordering in API responses. This convention is about maintaining consistent ordering of resources which in turn increases usability and maintainability of te API.</p>
+            <h3>Naming</h3>
+            <p>The naming conventions for resources in REST API follow a pattern of nouns for resources and plural nouns for collections of resources. 
+                An example of this could be retrieving a user, where the endpoint would be "/user". When retrieving a collection of users, this endpoint would then be "/users".</p>
         </div>
     </div>
 </body>

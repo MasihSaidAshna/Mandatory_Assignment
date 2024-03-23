@@ -1,4 +1,4 @@
-import { homePageRender, aboutRender, contactRender, nodejsRender, functionsRender, deploymentRender, expimpRender, ssrcsrRender } from "../util/readPages.js";
+import { homePageRender, aboutRender, contactRender, nodejsRender, expressRender, deploymentRender, expimpRender, ssrcsrRender } from "../util/readPages.js";
 import { Router } from "express";
 
 const router = Router();
@@ -19,8 +19,8 @@ router.get("/nodejs", (req, res) => {
     res.send(nodejsRender);
 });
 
-router.get("/functions", (req, res) => {
-    res.send(functionsRender);
+router.get("/express", (req, res) => {
+    res.send(expressRender);
 });
 
 router.get("/deploy", (req, res) => {

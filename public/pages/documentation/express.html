@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+    <link rel="stylesheet" href="../assets/css/pure.css">
+    <link rel="stylesheet" href="../assets/css/side-menu pure.css" />
+    <link rel="icon" href="../assets/images/nodejs.png">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Express and code conventions</h1>
+            <h2>Documentation on Express and conventions</h2>
+        </div>
+        <div class="content">
+            <p>
+                Express is an application framework used in Node.js for building web applications. The framework provides a wide range of utilities which makes the building process simpler and more manageable. 
+                Express is often used together with a template engine. There are popular ones like EJS, Pug and Handlebars. 
+                In this project I've made a file "templatingEngine.js" which handles reading and rendering pages in the application. It also attaches header, footer and side-menu to the page.
+            </p>
+            <h2>Routing</h2>
+            <p>
+                Express has a simple yet intuitive way of defining routes to HTTP requests. These routes are defined with HTTP methods (verbs) such as 'GET', 'POST', 'PUT' and 'DELETE'. 
+                The way to define a basic route in Express is done this way:
+                <pre>
+                    const express = require('express');
+                    const app = express();
+
+                    app.get('/', (req, res) => {
+                        res.send('');
+                    });
+                </pre>
+                In this example, the route for the homepage marked by the endpoint <code>'/'</code> simply responds to the request by sending an empty string back. 
+            </p>
+            <h2>Clean code conventions</h2>
+            <p>
+                Clean code conventions refer to a set of guidelines regarding writing code that is easy to understand, maintain and modify. 
+                When the code is clean it helps improving readability of the program and reducing complexity. 
+                This is why these conventions are taken very seriously when you have to work in a group of developers who all have to put their hands on the code. &#10;&#13;
+                Some examples of said conventions are: Good naming, consistent styling, single responsibility, don't repeat yourself and documentation.
+            </p>
+        </div>
+    </div>
+</body>
